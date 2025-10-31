@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- sns 공유 -->
+  <meta property="og:site_name" content="Himnaemap">
+  <meta property="og:title" content="Himnaemap">
+  <meta property="og:description" content="예랑가랑이 방문한 장소를 한 눈에!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/sns_thum.png">
+
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>방명록✍️</title>
+  
+  <!-- CSS  -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+
+</head>
+
+<style>
+  .wrap {
+    max-width: 1280px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    /* background-color: #333; */
+    margin-top: 40px;
+  }
+
+  #disqus_thread {
+    position: relative;
+  }
+
+  #disqus_thread:before {
+    white-space: pre-wrap;
+    /* content: "지도에 추가 되었으면 하는 장소 등,\A 방명록을 자유롭게 남겨주세요 🥰 \A Feel free to leave your comments,\A such as places you would like to see added to the map 🥰"; */
+    content: "방명록(Guestbook)✍️";
+    font-size: 40px;
+    overflow-wrap: break-word;
+    color: #333;
+    text-align: center;
+    display: block;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background-color: rgb(235 238 242);
+    padding: 30px 0;
+    border-radius: 5px;
+  }
+
+
+  #disqus_thread a {
+    color: #0059ff;
+  }
+
+  #disqus_thread a video {
+    max-height: 100px !important;
+  }
+
+  /* Tb. Ver. */
+  @media (max-width:768px) {
+
+    #disqus_thread:before {
+      font-size: 26px;
+      margin-bottom: 20px;
+      background-color: rgb(235 238 242);
+      padding: 20px 0;
+      border-radius: 5px;
+    }
+  }
+</style>
+
+<body>
+  <div class="wrap">
+    <div id="disqus_thread"></div>
+  </div>
+
+  
+  <script>
+    // 디스커스 링크 제작 및 수정필요 
+    // DON'T EDIT BELOW THIS LINE
+    (function () { 
+      var d = document,
+        s = d.createElement('script');
+      s.src = 'https://dreamplace-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+
+  <!-- 댓글 수 표기 : /body -->
+  <script id="dsq-count-scr" src="//dreamplace-1.disqus.com/count.js" async></script>
+</body>
+
+</html>
